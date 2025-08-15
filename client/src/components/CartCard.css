@@ -1,0 +1,44 @@
+/* src/components/CartCard.css */
+
+.cart-card {
+  display: flex;
+  background-color: #f9f9fc;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  margin: 16px 0;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.cart-card:hover {
+  transform: translateY(-4px);
+}
+
+.cart-card img {
+  width: 180px;
+  height: 140px;
+  object-fit: cover;
+  border-right: 1px solid #ddd;
+}
+
+.cart-card-content {
+  padding: 16px;
+  flex: 1;
+}
+
+.cart-card-content h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #191970; /* Deep blue theme */
+}
+
+.cart-card-content p {
+  margin: 6px 0;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.cart-card-content p strong {
+  color: #483D8B; /* Matching purple-blue theme */
+}

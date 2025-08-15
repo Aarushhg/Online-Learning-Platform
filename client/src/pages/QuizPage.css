@@ -1,0 +1,32 @@
+.quiz-page {
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem;
+  background-color: #f9f9ff;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+.question-block {
+  margin-bottom: 2rem;
+}
+
+.option-label {
+  display: block;
+  margin: 8px 0;
+}
+
+.submit-btn {
+  background-color: #191970;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.score-section {
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}

@@ -1,0 +1,62 @@
+/* src/pages/VerifyOTP.css */
+.verify-otp-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f2f5;
+}
+
+.verify-otp-form {
+  background-color: white;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+.verify-otp-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #191970;
+}
+
+.verify-otp-form label {
+  display: block;
+  margin: 15px 0 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.verify-otp-form input {
+  margin-top: 20px;  
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.verify-otp-form button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #1f117e;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.verify-otp-form button:hover {
+  background-color: #0d025f;
+}
+
+.error-msg {
+  color: red;
+  text-align: center;
+  margin-top: 10px;
+}

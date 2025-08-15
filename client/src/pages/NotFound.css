@@ -1,0 +1,25 @@
+/* src/pages/NotFound.css */
+
+.notfound-container {
+  text-align: center;
+  padding: 100px 20px;
+  color: #333;
+}
+
+.notfound-container h1 {
+  font-size: 6rem;
+  color: #ff6b6b;
+}
+
+.notfound-container p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.notfound-container a {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #191970;
+  padding: 10px 20px;
+  border-radius: 8px;
+}

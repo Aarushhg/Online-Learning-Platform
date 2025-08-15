@@ -1,0 +1,57 @@
+/* PaymentPage.css */
+
+.payment-page {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.payment-page h2 {
+  text-align: center;
+  color: #11068c;
+  font-size: 28px;
+  margin-bottom: 25px;
+}
+
+.course-summary {
+  margin-bottom: 20px;
+  border-top: 1px solid #ddd;
+  padding-top: 15px;
+}
+
+.course-summary p {
+  font-size: 16px;
+  margin: 8px 0;
+  color: #333;
+}
+
+.total-amount {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 20px;
+  color: #000000;
+  text-align: right;
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+}
+
+.pay-button {
+  margin-top: 30px;
+  width: 100%;
+  background-color: #14248f;
+  color: #fff;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  font-size: 17px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pay-button:hover {
+  background-color: #140d65;
+}

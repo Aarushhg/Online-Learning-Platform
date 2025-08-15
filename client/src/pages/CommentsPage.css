@@ -1,0 +1,39 @@
+.comments-page {
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem;
+  background-color: #f2f5fa;
+  border-radius: 10px;
+}
+
+.comment-input textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  resize: none;
+  height: 100px;
+}
+
+.comment-input button {
+  padding: 10px 16px;
+  background-color: #191970;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.comment-list {
+  margin-top: 20px;
+}
+
+.comment-box {
+  background-color: white;
+  padding: 14px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}

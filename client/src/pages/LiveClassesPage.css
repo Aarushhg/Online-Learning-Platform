@@ -1,0 +1,29 @@
+.live-classes-page {
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem;
+  background-color: #f9f9ff;
+  border-radius: 10px;
+}
+
+.live-session {
+  background-color: white;
+  padding: 16px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.live-session h3 {
+  margin-bottom: 0.5rem;
+}
+
+.live-session button {
+  background-color: #191970;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+}

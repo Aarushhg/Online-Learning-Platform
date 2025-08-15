@@ -1,0 +1,75 @@
+.student-dashboard {
+  padding: 40px;
+  background-color: #ffffff;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  color: #000000;
+}
+
+.dashboard-heading {
+  font-size: 32px;
+  margin-bottom: px;
+  text-align: center;
+  color: #000000;
+}
+
+.dashboard-cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 cards in a row */
+  gap: 50px;
+  justify-items: center;
+}
+
+.dashboard-card {
+  background-color: #191970;
+  width: 90%;
+  height: 220px; /* Increased height */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  border-radius: 0; /* Sharp corners */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dashboard-card:hover {
+  background-color: #1e2a78;
+  transform: translateY(-5px);
+}
+
+.dashboard-card h3 {
+  color: #ffffff;
+  font-size: 25px;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .student-dashboard {
+    padding: 20px 15px;
+  }
+
+  .dashboard-heading {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  .dashboard-cards-container {
+    grid-template-columns: 1fr; /* 1 card per row on mobile */
+    gap: 20px;
+  }
+
+  .dashboard-card {
+    width: 100%; /* full width on mobile */
+    height: auto; /* let height adjust based on content */
+    padding: 20px 10px;
+    min-height: 180px; /* Optional smaller height */
+  }
+
+  .dashboard-card h3 {
+    font-size: 20px;
+  }
+}
+
+

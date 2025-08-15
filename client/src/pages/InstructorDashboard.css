@@ -1,0 +1,81 @@
+.instructor-dashboard {
+  padding: 30px;
+  background-color: white;
+  color: #333;
+}
+
+.dashboard-heading {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 40px;
+  color: black;
+}
+
+.dashboard-cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.dashboard-card {
+  background-color: #191970;
+  color: white;
+  text-align: center;
+  padding: 20px 30px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  width: 400px;
+  height: 200px;
+  font-size: 25px; /* <-- Increase font size here */
+  transition: background-color 0.3s;
+}
+
+.dashboard-card:hover {
+  background-color: #483D8B;
+}
+
+.your-courses-section {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.your-courses-section h3 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #191970;
+}
+
+.course-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding: 15px 0;
+}
+
+.course-info h4 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.course-info p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.course-actions button {
+  margin-left: 10px;
+  padding: 8px 14px;
+  border: none;
+  background-color: #191970;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.course-actions button:hover {
+  background-color: #483D8B;
+}

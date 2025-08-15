@@ -1,0 +1,453 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.main-header {
+  background-color: #191970;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  height: 65px;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between logo and title */
+  text-decoration: none;
+}
+
+
+.header-logo {
+  height: 40px;
+  width: auto;
+}
+
+.title-link {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+
+.site-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+  margin: 0;
+}
+
+.nav-links a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ffcc00;
+}
+
+.hamburger {
+  width: 25px;
+  height: 20px;
+  margin-right: 20px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hamburger span {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 2px;
+}
+
+/* Sidebar styles */
+.sidebar-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  z-index: 999;
+  transition: width 0.3s ease;
+}
+
+.sidebar-overlay.open {
+  width: 100%;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -300px;
+  width: 280px;
+  height: 100%;
+  background-color: #191970;
+  padding: 30px 20px;
+  box-shadow: 2px 0 12px rgba(0,0,0,0.3);
+  transition: left 0.3s ease;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+.sidebar a {
+  background: transparent;
+  color: white;
+  text-decoration: none;
+  padding: 12px 16px;
+  margin-bottom: 12px;
+  border: none;
+  text-align: left;
+  font-size: 16px;
+  border-radius: 8px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.sidebar a:hover {
+  background-color: #483D8B;
+  color: #ffcc00;
+}
+
+.close-btn {
+  background: none;
+  color: white;
+  font-size: 24px;
+  align-self: flex-end;
+  margin-bottom: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.site-title-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.dropdown {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  text-align: left;
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.dropdown-btn:hover {
+  background-color: #444;
+}
+
+.dropdown-content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.dropdown-content a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 20px;
+  font-size: 0.95rem;
+}
+
+.dropdown-content a:hover {
+  background-color: #333;
+}
+
+.sidebar a,
+.dropdown-btn {
+  display: block;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-family: 'Segoe UI', sans-serif; /* match rest of site */
+}
+
+.sidebar a:hover,
+.dropdown-btn:hover {
+  background-color: #333;
+  color: #ffcc00; /* or your hover color */
+}
+
+.welcome-text {
+  color: white;
+  margin-right: 10px;
+  margin-left: 15px;
+  font-weight: 600; 
+  font-size: 1.1rem;
+  font-family: 'Poppins', sans-serif; 
+}
+
+.sidebar-link-btn {
+  background: transparent;
+  color: white;
+  padding: 12px 16px;
+  margin-bottom: 12px;
+  border: none;
+  text-align: left;
+  font-size: 16px;
+  border-radius: 8px;
+  width: 100%;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  font-family: 'Segoe UI', sans-serif;
+  cursor: pointer;
+}
+
+.sidebar-link-btn:hover {
+  background-color: #483D8B;
+  color: #ffcc00;
+}
+
+/* Apply dark mode only when the body has .dark-mode */
+body.dark-mode {
+  background-color: #121212;
+  color: #E0E0E0;
+}
+
+/* Containers and Cards (Surface) */
+.dark-mode .admin-dashboard,
+.dark-mode .student-dashboard,
+.dark-mode .instructor-dashboard,
+.dark-mode .about-container,
+.dark-mode .home-features,
+.dark-mode .course-card,
+.dark-mode .courses-page,
+.dark-mode .cart-page,
+.dark-mode .comments-page ,
+.dark-mode .comment-list,
+.dark-mode .feature-card,
+.dark-mode .table-section,
+.dark-mode .stat-card,
+.dark-mode .sub-table,
+.dark-mode .sub-table li,
+.dark-mode .cart-items,
+.dark-mode .comment-box,
+.dark-mode .course-details-container,
+.dark-mode .course-upload-page,
+.dark-mode .create-course-page,
+.dark-mode .discussion-forum,
+.dark-mode .enrolled-courses-container,
+.dark-mode .enrolled-course-card,
+.dark-mode .enrollment-container,
+.dark-mode .help-page,
+.dark-mode .lesson-content,
+.dark-mode .lesson-page,
+.dark-mode .live-classes-page,
+.dark-mode .live-session,
+.dark-mode .login-form,
+.dark-mode .register-container,
+.dark-mode .my-courses-container,
+.dark-mode .notification-card,
+.dark-mode .notifications-page,
+.dark-mode .payment-page,
+.dark-mode .progress-page,
+.dark-mode .profile-container,
+.dark-mode .quiz-page,
+.dark-mode .notfound-container,
+.dark-mode .verify-otp-form,
+.dark-mode .course-summary,
+.dark-mode .summary,
+.dark-mode .question-block,
+.dark-mode .reply-box,
+.dark-mode .threads .thread-card {
+  background-color: #1E1E1E;
+  color: #E0E0E0;
+  border-color: #2A2A2A;
+  box-shadow: 0 0 10px rgba(58, 58, 117, 0.4); /* Soft blue glow */
+}
+
+/* Text */
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode h4,
+.dark-mode h5,
+.dark-mode h6 {
+  color: #E0E0E0;
+}
+
+.dark-mode p,
+.dark-mode span,
+.dark-mode small,
+.dark-mode label {
+  color: #B0B0B0;
+}
+
+/* Input Fields */
+.dark-mode input,
+.dark-mode textarea,
+.dark-mode select {
+  background-color: #1E1E1E;
+  color: #E0E0E0;
+  border: 1px solid #2A2A2A;
+}
+
+.dark-mode input:focus,
+.dark-mode textarea:focus,
+.dark-mode select:focus {
+  border-color: #FFCC00;
+  outline: none;
+  box-shadow: 0 0 5px #FFCC00;
+}
+
+/* Buttons */
+.dark-mode button,
+.dark-mode .proceed-btn,
+.dark-mode .submit-comment,
+.dark-mode .quiz-btn,
+.dark-mode .reply-toggle,
+.dark-mode .reply-box button,
+.dark-mode .course-card button,
+.dark-mode .pay-button,
+.dark-mode .register-form button,
+.dark-mode .login-form button,
+.dark-mode .save-btn,
+.dark-mode .password-btn {
+  background-color: #3A3A75;
+  color: #FFCC00;
+  border: none;
+}
+
+.dark-mode button:hover,
+.dark-mode .pay-button:hover,
+.dark-mode .register-form button:hover,
+.dark-mode .login-form button:hover,
+.dark-mode .reply-toggle:hover,
+.dark-mode .reply-box button:hover {
+  background-color: #2A2A6A;
+}
+
+/* Pagination and Filter Controls */
+.dark-mode .pagination-controls button,
+.dark-mode .filter-bar input,
+.dark-mode .filter-bar select {
+  background-color: #1E1E1E;
+  color: #E0E0E0;
+  border-color: #2A2A2A;
+}
+
+/* Tables */
+.dark-mode .table-section table,
+.dark-mode .table-section th,
+.dark-mode .table-section td {
+  background-color: transparent;
+  color: #E0E0E0;
+  border-color: #2A2A2A;
+}
+
+/* Notification Read/Unread */
+.dark-mode .notification-card.read {
+  background-color: #262626;
+}
+
+.dark-mode .notification-card.unread {
+  background-color: #2B2B2B;
+}
+
+/* Progress Bars */
+.dark-mode .progress-bar-container {
+  background-color: #2A2A2A;
+}
+
+.dark-mode .progress-bar {
+  background-color: #FFCC00;
+}
+
+/* Quiz Score Section */
+.dark-mode .score-section {
+  color: #FFCC00;
+}
+
+/* Links (e.g. NotFound, Buttons, Text Links) */
+.dark-mode a {
+  color: #FFCC00;
+}
+
+.dark-mode a:hover {
+  color: #e6b800;
+}
+
+/* Exclude Sidebar and Header (assumes .sidebar and .header) */
+.dark-mode .sidebar,
+.dark-mode .header {
+  background-color: #020234;
+  color: initial !important;
+  border-color: initial !important;
+  box-shadow: initial !important;
+}
+
+/* Preserve .home-btn appearance in dark mode */
+.dark-mode .home-btn {
+  background-color: #ffcc00 !important;
+  color: black !important;
+}
+
+.dark-mode .home-btn:hover {
+  background-color: #e6b800 !important;
+}
+
+/* Base style for the toggle button */
+.dark-mode-toggle {
+  background-color: transparent;
+  margin-right: -5px;
+}
+
+.dark-mode-toggle:hover{
+  background-color: transparent;
+}
+
+/* When dark mode is active */
+.dark-mode .dark-mode-toggle {
+  background-color: transparent;
+}
+
+.dark-mode .dark-mode-toggle:hover{
+  background-color: transparent;
+}
+
+.nav-profile-pic {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-left: 1rem;
+  margin-bottom: -10px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .live,
+  .profile,
+  .site-title,
+  .welcome-text {
+    display: none;
+  }
+}

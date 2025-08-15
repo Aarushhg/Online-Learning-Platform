@@ -1,0 +1,19 @@
+.home {
+  padding: 2rem;
+  text-align: center;
+}
+
+.home-header {
+  margin-bottom: 3rem;
+}
+
+.course-section h2 {
+  margin-bottom: 1rem;
+}
+
+.course-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}

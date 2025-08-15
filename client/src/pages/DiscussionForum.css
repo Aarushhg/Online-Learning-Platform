@@ -1,0 +1,86 @@
+.discussion-forum {
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.new-thread {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.new-thread textarea {
+  resize: none;
+  height: 100px;
+  padding: 1rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid #ccc;
+}
+
+.new-thread button {
+  width: 100px;
+  padding: 10px;
+  background-color: #483D8B;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.threads .thread-card {
+  background: #f9f9ff;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 10px;
+  border-left: 4px solid #191970;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.thread-card h3 {
+  margin-top: 0;
+}
+
+.comments {
+  margin-top: 1rem;
+  padding-left: 1rem;
+  border-left: 2px solid #ccc;
+}
+
+.reply-toggle {
+  margin-top: 10px;
+  background-color: #483D8B;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.reply-box {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.reply-box textarea {
+  resize: none;
+  height: 80px;
+  padding: 0.75rem;
+  margin-bottom: 0.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+}
+
+.reply-box button {
+  align-self: flex-start;
+  background-color: #191970;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

@@ -1,0 +1,38 @@
+.create-course-page {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background-color: #f9f9ff;
+}
+
+.create-course-page h2 {
+  text-align: center;
+  color: #191970;
+  margin-bottom: 20px;
+}
+
+.course-form input,
+.course-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.course-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #483D8B;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.course-form button:hover {
+  background-color: #372f6f;
+}

@@ -1,0 +1,37 @@
+.progress-page {
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem;
+  background-color: #f4f6fc;
+  border-radius: 10px;
+}
+
+.summary {
+  margin-bottom: 20px;
+  background: white;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 0 4px rgba(0,0,0,0.1);
+}
+
+.progress-list .course-progress-card {
+  background-color: white;
+  padding: 16px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.progress-bar-container {
+  height: 14px;
+  background-color: #e0e0e0;
+  border-radius: 7px;
+  overflow: hidden;
+  margin: 10px 0;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #483D8B;
+  border-radius: 7px;
+}
