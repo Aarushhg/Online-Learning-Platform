@@ -1,4 +1,4 @@
-# 📚 E-Learning Platform
+# 📚 LearnPro
 
 A full-stack Learning Management System (LMS) built with MERN (MongoDB, Express, React, Node.js).  
 It provides separate dashboards for students, instructors, and admins, enabling a smooth online learning experience with courses, lessons, live classes, quizzes, and more.
