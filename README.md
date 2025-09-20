@@ -51,7 +51,7 @@ It provides separate dashboards for students, instructors, and admins, enabling 
 
 ### 1️⃣ Clone the repository
     ```bash
-    git clone https://github.com/your-username/e-learning-platform.git
+    git clone https://github.com/your-username/online-learning-platform.git
     cd e-learning-platform
 
 ### 2️⃣ Backend Setup 
@@ -61,7 +61,7 @@ It provides separate dashboards for students, instructors, and admins, enabling 
 
     Create a .env file in the backend/ directory:
 
-    MONGO_URI=mongodb://localhost:27017/e-learning
+    MONGO_URI=mongodb://localhost:27017/Learnpro
     JWT_SECRET=your_jwt_secret
 
 
